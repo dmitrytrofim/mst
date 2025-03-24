@@ -96,8 +96,7 @@
   right: 0;
   width: 40vw;
   opacity: 0;
-  filter: blur(5px);
-  animation: showVisual 1s linear 0s forwards;
+  animation: showVisual 2s ease-in 0s forwards;
   @media screen and (max-width: 1300px) {
    display: none;
   }
