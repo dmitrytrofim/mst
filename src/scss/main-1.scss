@@ -19,13 +19,24 @@
  & {
   position: relative;
   padding: 300px 0 50px;
+  @media screen and (max-width: 1300px) {
+   padding: 150px 0 50px;
+  }
  }
  &__container {
+  @media screen and (max-width: 1300px) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
  }
  &__heading {
   display: flex;
   flex-direction: column;
   margin-bottom: 64px;
+  @media screen and (max-width: 1300px) {
+   text-align: center;
+  }
  }
  &__title {
   font-family: var(--font-prata);
@@ -44,20 +55,36 @@
  &__benefits-item {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 18px;
+  padding-left: 64px;
   &::before {
    flex-shrink: 0;
    content: '';
-   position: relative;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
    width: 40px;
    height: 40px;
    background: url('/src/img/svg/tick.svg') center / contain no-repeat;
+   @media screen and (max-width: 1300px) {
+    width: 30px;
+    height: 30px;
+   }
   }
   & span {
    font-family: var(--font-prata);
    font-size: var(--sz-40);
    text-transform: uppercase;
+   white-space: nowrap;
+  }
+  @media screen and (max-width: 1300px) {
+   gap: 5px 18px;
+  }
+  @media screen and (max-width: 768px) {
+   padding-left: 46px;
   }
  }
  &__order {
@@ -88,6 +115,14 @@
   grid-template-columns: 1fr 614px 1fr;
   gap: 53px;
   padding-top: 100px;
+  @media screen and (max-width: 1500px) {
+   grid-template-columns: 1fr 440px 1fr;
+  }
+  @media screen and (max-width: 1200px) {
+   display: flex;
+   flex-direction: column;
+   padding: 100px 10px 0;
+  }
  }
  &__visual {
   opacity: 0;
@@ -105,6 +140,9 @@
     opacity: 1;
     transform: translateX(0);
    }
+  }
+  @media screen and (max-width: 1200px) {
+   height: 400px;
   }
  }
  &__visual-img {
@@ -132,6 +170,10 @@
    width: 60px;
    height: 60px;
    background: url('/src/img/svg/benef-icon.svg') center / contain no-repeat;
+   @media screen and (max-width: 640px) {
+    width: 40px;
+    height: 40px;
+   }
   }
   &:not(:last-child) {
    border-bottom: 1px solid #55565a;
@@ -161,12 +203,25 @@
  &__main {
   color: var(--t-38535d);
   padding: 72px 690px 72px 134px;
+  @media screen and (max-width: 1280px) {
+   padding: 72px 400px 72px 72px;
+  }
+  @media screen and (max-width: 900px) {
+   padding: 72px;
+  }
+  @media screen and (max-width: 640px) {
+   padding: 30px;
+  }
  }
  &__title {
   font-family: var(--font-prata);
   font-weight: 400;
   font-size: var(--sz-54);
   margin-bottom: 45px;
+  @media screen and (max-width: 420px) {
+   --sz-54: 30px;
+   margin-bottom: 30px;
+  }
  }
  &__form {
   display: flex;
@@ -217,6 +272,12 @@
   width: 620px;
   background: url('/src/img/bg-form.webp') left center / cover no-repeat;
   border-radius: 0 30px 30px 0;
+  @media screen and (max-width: 1200px) {
+   width: 400px;
+  }
+  @media screen and (max-width: 900px) {
+   display: none;
+  }
  }
  &__visual-img {
   position: absolute;

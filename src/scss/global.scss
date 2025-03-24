@@ -29,6 +29,18 @@
  --sz-50: 50px;
  --sz-54: 54px;
  --sz-80: 80px;
+
+ @media screen and (max-width: 768px) {
+  --sz-16: 16px;
+  --sz-19: 16px;
+  --sz-20: 18px;
+  --sz-24: 20px;
+  --sz-36: 26px;
+  --sz-40: 30px;
+  --sz-50: 40px;
+  --sz-54: 44px;
+  --sz-80: 50px;
+ }
 }
 
 // @media (prefers-color-scheme: dark) {

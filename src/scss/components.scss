@@ -41,14 +41,29 @@
  display: inline-flex;
  justify-content: center;
  align-items: center;
+ text-align: center;
  font-weight: 700;
  color: var(--t-222);
  text-transform: uppercase;
  background-color: var(--b-fff);
  border-radius: 4px;
- padding: 32px 50px;
+ padding: 30px 48px;
+ border: 2px solid #fff;
+ box-sizing: border-box;
+ transition: color 0.1s linear 0s, background-color 0.1s linear 0s,
+  border-color 0.1s linear 0s;
+ &:hover {
+  color: #fff;
+  background-color: #222;
+  border: 2px solid #fff;
+ }
  &.m-black {
   color: var(--t-fff);
   background-color: var(--b-282829);
+  &:hover {
+   color: #222;
+   background-color: #fff;
+   border: 2px solid #222;
+  }
  }
 }
