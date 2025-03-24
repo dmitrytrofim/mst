@@ -4,6 +4,7 @@
  --font-prata: 'Prata', sans-serif;
 
  // text colors
+ --t-222: #222;
  --t-fff: #fff;
  --t-38535d: #38535d;
  --t-55565a: #55565a;
@@ -11,6 +12,7 @@
  --t-d5c9be: #d5c9be;
 
  // background colors
+ --b-fff: #fff;
  --b-222: #222;
  --b-282829: #282829;
  --b-d6d6d6: #d6d6d6;
@@ -39,12 +41,12 @@
  height: 0;
 }
 ::-webkit-scrollbar-track {
- background-color: var(--b-fff);
- box-shadow: 0 0 3px var(--b-fff) inset;
+ background-color: var(--b-222);
+ box-shadow: 0 0 3px var(--b-222) inset;
 }
 ::-webkit-scrollbar-thumb {
  border-radius: 2px;
- background-color: var(--b-000);
+ background-color: var(--b-fff);
  background-position: center;
  background-repeat: no-repeat;
 }
@@ -77,7 +79,7 @@ body.page {
  display: grid;
  min-height: 100dvh;
  grid-template-columns: minmax(300px, 1fr);
- grid-template-rows: auto 1fr auto;
+ grid-template-rows: 1fr auto;
  overflow: hidden;
 }
 

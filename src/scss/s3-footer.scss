@@ -1,1 +1,66 @@
 @use './sass-tools/functions.scss' as f;
+.footer {
+ &__container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s linear 0s, transform 0.5s linear 0s;
+  &.j-anime {
+   opacity: 1;
+   transform: translateY(0);
+  }
+ }
+ &__nav {
+  border-top: 2px solid #d5c9be;
+  border-bottom: 2px solid #d5c9be;
+ }
+ &__nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 0;
+ }
+ &__nav-item {
+ }
+ &__nav-link {
+  font-size: var(--sz-20);
+  text-transform: uppercase;
+  font-style: italic;
+ }
+ &__main {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding: 50px 0 60px;
+ }
+ &__row {
+  display: flex;
+  justify-content: space-between;
+ }
+ &__logo {
+ }
+ &__social {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+ }
+ &__social-link {
+ }
+ &__social-link-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  object-position: center;
+ }
+ &__order {
+ }
+ &__text {
+  font-size: var(--sz-20);
+  color: var(--t-fff);
+  &.m-copyright {
+  }
+  &.m-link {
+   color: var(--t-d5c9be);
+  }
+ }
+}

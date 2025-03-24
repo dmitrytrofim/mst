@@ -8,62 +8,64 @@
 
   <main class="page__main main">
 
-   <section class="main__greet greet">
+   <section id="about" class="main__greet greet">
     <div class="container">
      <div class="greet__container">
       <hgroup class="greet__heading">
-       <h1 class="greet__title">Получите дом<br> ВАШЕЙ МЕЧТЫ</h1>
+       <h1 class="greet__title">Купите дом<br> ВАШЕЙ МЕЧТЫ</h1>
        <p class="greet__subtitle">Выгодно и быстро</p>
       </hgroup>
       <ul class="greet__benefits">
        <li class="greet__benefits-item">от <span>$10 000</span> элитное жилье</li>
-       <li class="greet__benefits-item">30% первоначальный взнос</li>
-       <li class="greet__benefits-item">до 17% переплат</li>
+       <li class="greet__benefits-item"><span>30%</span> первоначальный взнос</li>
+       <li class="greet__benefits-item">до <span>17%</span> переплат</li>
       </ul>
-      <a href="#" class="greet__order btn">Закажите сейчас</a>
+      <a href="#contacts" class="greet__order btn">Закажите сейчас</a>
      </div>
+    </div>
+    <div class="greet__visual i-wrap">
+     <img class="greet__visual-img i-full" src="/src/img/greet.webp" alt="">
     </div>
    </section>
 
-   <div class="main__benefits benefits">
-    <div class="container">
-     <div class="benefits__container">
-      <div class="benefits__visual m-left">
-       <img class="benefits__visual-img" src=" " alt="" loading="lazy">
-      </div>
-      <div class="benefits__main">
-       <ul class="benefits__list">
-        <li class="benefits__list-item">Простор и уют – много места для жизни и отдыха, продуманная планировка.</li>
-        <li class="benefits__list-item">Современные технологии – умный дом, энергоэффективные решения.</li>
-        <li class="benefits__list-item">Идеальное расположение – тишина, природа, но близость к городу.</li>
-        <li class="benefits__list-item">Персональный стиль – дизайн, отражающий вашу индивидуальность.</li>
-       </ul>
-       <a href="#" class="benefits__order btn">Закажите сейчас</a>
-      </div>
-      <div class="benefits__visual m-left">
-       <img class="benefits__visual-img" src=" " alt="" loading="lazy">
-      </div>
+   <div id="benefits" class="main__benefits benefits">
+    <div class="benefits__container">
+     <div data-anime class="benefits__visual m-left i-wrap">
+      <img class="benefits__visual-img i-full" src="/src/img/benefit-left.webp" alt="" loading="lazy">
+     </div>
+     <div class="benefits__main">
+      <ul class="benefits__list">
+       <li class="benefits__list-item">Простор и уют – много места для жизни и отдыха, продуманная планировка.</li>
+       <li class="benefits__list-item">Современные технологии – умный дом, энергоэффективные решения.</li>
+       <li class="benefits__list-item">Идеальное расположение – тишина, природа, но близость к городу.</li>
+       <li class="benefits__list-item">Персональный стиль – дизайн, отражающий вашу индивидуальность.</li>
+      </ul>
+      <a href="#contacts" class="benefits__order btn">Закажите сейчас</a>
+     </div>
+     <div data-anime class="benefits__visual m-right i-wrap">
+      <img class="benefits__visual-img i-full" src="/src/img/benefit-right.webp" alt="" loading="lazy">
      </div>
     </div>
    </div>
 
-   <section class="main__order order">
+   <section id="contacts" class="main__order order">
     <div class="container">
-     <div class="order__container">
+     <div data-anime class="order__container">
       <div class="order__main">
-       <h2 class="order__title">Заполните и мечта осуществится</h2>
+       <h2 class="order__title">Отправьте заявку<br> и мечта осуществится</h2>
        <form class="order__form" action="#" method="post">
         <input class="order__form-inp" type="text" name="name" placeholder="Name">
-        <input class="order__form-inp" type="email" name="email" placeholder="Name">
+        <input class="order__form-inp" type="email" name="email" placeholder="E-mail">
         <label class="order__form-agree">
          <input class="order__form-agree-check" type="checkbox" name="agree">
+         <i class="order__form-agree-icon"></i>
          <span class="order__form-agree-descr">Я соглашаюсь с условиями</span>
         </label>
         <button class="order__form-submit btn m-black">Отправить</button>
        </form>
       </div>
       <div class="order__visual">
-       <img class="order__visual-img" src=" " alt="" loading="lazy">
+       <img class="order__visual-img" src="/src/img/woman.webp" alt="" loading="lazy">
       </div>
      </div>
     </div>

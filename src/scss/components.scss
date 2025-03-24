@@ -32,3 +32,23 @@
  object-fit: contain;
  object-position: center;
 }
+.logo {
+ font-family: var(--font-prata);
+ font-size: var(--sz-36);
+ text-transform: uppercase;
+}
+.btn {
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: 700;
+ color: var(--t-222);
+ text-transform: uppercase;
+ background-color: var(--b-fff);
+ border-radius: 4px;
+ padding: 32px 50px;
+ &.m-black {
+  color: var(--t-fff);
+  background-color: var(--b-282829);
+ }
+}
