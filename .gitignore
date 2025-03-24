@@ -1,6 +1,5 @@
 /node_modules/*
 /archive/nogit/*
-/mst/*
 /theme-wp/*
 /wordpress/*
 !/wordpress/wp-content/
