@@ -1,0 +1,29 @@
+// Заменить ../../ на ../
+@font-face {
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: 400;
+ font-display: swap;
+ src: url('../../fonts/ArialMT.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Arial';
+ font-style: italic;
+ font-weight: 400;
+ font-display: swap;
+ src: url('../../fonts/Arial-ItalicMT.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: 700;
+ font-display: swap;
+ src: url('../../fonts/Arial-BoldMT.woff2') format('woff2');
+}
+@font-face {
+ font-family: 'Prata';
+ font-style: normal;
+ font-weight: 400;
+ font-display: swap;
+ src: url('../../fonts/Prata-Regular.woff2') format('woff2');
+}
